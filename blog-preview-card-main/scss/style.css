@@ -67,7 +67,12 @@ body main .text-container {
   gap: 15px;
 }
 body main .text-container h1 {
+  cursor: pointer;
+  transition: color 200ms ease-in-out;
   font-size: 20px;
+}
+body main .text-container h1:hover {
+  color: hsl(47, 88%, 63%);
 }
 body main .text-container p {
   font-size: 14px;

@@ -78,8 +78,16 @@ body{
             gap:15px;
 
             h1{
+                cursor: pointer;
+                transition: color 200ms ease-in-out;
                 font-size: 20px;
+
+                &:hover{
+                    color: $yellow;
+                }
             }
+
+            
             p{
                 font-size: 14px;
                 font-weight: 600;
