@@ -1,0 +1,121 @@
+@use "./reset.scss";
+@use "./variable.scss" as *;
+
+body{
+    background-color: $yellow;
+    
+    height: 100vh;
+    width: 100vw;
+    font-family: $figtree;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    main{
+        
+        width: 85%;
+        padding: 20px;
+        color: $balck;
+        background-color: $white;
+        border: 1px solid $balck;
+        border-radius: 20px;
+        gap: 20px;
+
+        display: flex;
+        flex-direction: column;
+
+        box-shadow: 8px 8px 0 $balck;
+
+
+
+        .image-container{
+            position: relative;
+            width: 100%;
+            height: 200px;
+            
+
+            border-radius: 10px;
+            overflow: hidden;
+
+
+            img{
+                position: absolute;
+                inset:0;
+                width:100%;
+                height: 100%;
+
+                object-fit: cover;
+            }
+        }
+
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+
+            label{
+
+                font-size: 12px;
+                font-weight: 800;
+                background-color: $yellow;
+                width:fit-content;
+                padding: 5px 10px;
+                border-radius: 3px;
+            }
+
+            p{
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+
+        .text-container
+        {
+            display: flex;
+            flex-direction: column;
+            gap:15px;
+
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 1.5;
+                opacity: 0.5;
+            }
+        }
+
+        .profile-container
+        {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img{
+                width: 30px;
+
+            }
+            h2{
+                font-size: 15px;
+                font-weight: 900;
+            }
+
+        }
+
+        
+    }
+}
+
+
+//Desktop version
+
+@media screen and (min-width: 1024px){
+    body{
+        main{
+            width:27%;
+        }
+    }
+}
